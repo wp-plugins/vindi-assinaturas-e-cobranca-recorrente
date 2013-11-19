@@ -1,19 +1,21 @@
-=== WP-Vindi ===
+=== Vindi Assinaturas e Cobrança Recorrente ===
 Contributors: agoulart, dantasrodrigo
 Website Link: http://vindi.com.br
-Tags: Vindi, subscription, registration, tools, membership, pagamento-recorrente, cobranca-recorrente, cobrança-recorrente, recurring, site-de-assiantura, assinaturas, faturamento-recorrente, recorrencia, assinatura
+Tags: Vindi, subscription, registration, tools, membership, pagamento-recorrente, cobranca-recorrente, cobrança-recorrente, recurring, site-de-assinatura, assinaturas, faturamento-recorrente, recorrencia, assinatura, subscription-billing
 Requires at least: 2.9
 Tested up to: WordPress 3.7.1
 Stable Tag: 1.0.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-
-WP-Vindi allows users to integrate the Vindi service with WordPress.
+O Vindi Assinaturas e Cobrança Recorrente possibilita administração e cobrança de: planos, assinaturas e mensalidades. Sites de Assinaturas, Softwares SaaS, Hospedagens, e-Learning, Jogos Online, Editoras, Serviços agora podem cobrar de seus clientes com tranquilidade.
 
 == Description ==
 
-WP-Vindi allows users to integrate the Vindi service with WordPress. Giving you the ability to run a membership or subscription-based website, controlling access to content based on paid or free subscriptions.
+O Vindi Assinaturas e Cobrança Recorrente é um plugin que democratiza a cobrança de mensalidades, planos e assinaturas com cartão de crédito e boleto. Clubes, Sites de Assinatura de Produtos, Softwares SaaS, Hospedagens, e-Learning, Cursos e Escolas, Jogos Online, Editoras, Serviços e toda empresa que precisa cobrar mensalmente seus clientes, pode usar o plugin de assinaturas da VIndi. 
+
+O "Vindi - Assinaturas e Cobrança Recorrente" possibilita o Controle de Assinantes através de Painel Administrativo (dashboard), Conciliação e Rápida Integração com meios de pagamento. Com o plugin é possível criar inclusive modelos de assinatura em versões "trial".
+
 
 == Installation ==
 
@@ -28,7 +30,7 @@ WP-Vindi allows users to integrate the Vindi service with WordPress. Giving you 
   d. The user's login information will come to them in an email. It is helpful to tell them to check their email to get that information and allow them to login.
   e. This email is the typical New User email, and you can modify it via other plugins.
 3. Got to the Vindi settings section of the WordPress admin area.
-  a. Add your API Key (you get this from Vindi when logged in)
+  a. Add your API Key (you get this from vindi.com.br when logged in)
   b. Your Domain is the subdomain you get when creating a new site inside of the Vindi system
   c. Mode, leave it Test until you're ready to make it live.
   d. Sign-up Type should be left at Default unless you know what you're doing.
@@ -40,7 +42,7 @@ WP-Vindi allows users to integrate the Vindi service with WordPress. Giving you 
 7. Now that you have a product identified, your WordPress account will use that information and allow you to set pages or posts to private. Go create a test post and look for the Vindi settings within that post edit page, and check that it's for members only (or whatever you named your product).
 8. Now, when you try and access that product, you'll be told you have to be logged in to view, and it should give you a link to sign up for an account.
 9. Logout of WordPress and try it. Go through every step and make sure it's working before your turn off the Test function.
-10. If that works, you'll need to continue setting up your Vindi account, inputting whatever information you need for your merchant account, payment gateway. See vindi's support for more information on that.
+10. If that works, you'll need to continue setting up your Vindi account, inputting whatever information you need for your merchant account, payment gateway, or PayPal account. See vindi's support for more information on that.
 
 == Frequently Asked Questions ==
 
@@ -49,5 +51,5 @@ For help setting up and configuring Vindi - Assinaturas e Cobrança Recorrente p
 == Changelog ==
 
 = 1.0.0 =
-* Based on Chargify plugin
+
 
