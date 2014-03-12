@@ -4,7 +4,7 @@ Website Link: http://vindi.com.br
 Tags: Vindi, subscription, registration, tools, membership, pagamento-recorrente, cobranca-recorrente, cobrança-recorrente, recurring, site-de-assinatura, assinaturas, faturamento-recorrente, recorrencia, assinatura, subscription-billing
 Requires at least: 2.9
 Tested up to: WordPress 3.7.1
-Stable Tag: 1.0.0
+Stable Tag: 1.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,4 +52,7 @@ For help setting up and configuring Vindi - Assinaturas e Cobrança Recorrente p
 
 = 1.0.0 =
 
+= 1.0.1 =
+Correcting a problem "Warning: Cannot modify header information - headers already sent by ...".
+Caused by a line by the end of the php file.
 
