@@ -54,4 +54,3 @@ class VindiCustomer extends VindiConnector
   public function getEmail() { return $this->customerEmail; }
 }
 
-?>

@@ -104,4 +104,3 @@ class VindiSubscription extends VindiConnector
   public function getProductId() { return $this->productId; }
 }
 
-?>

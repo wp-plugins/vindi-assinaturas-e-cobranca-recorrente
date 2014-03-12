@@ -8,7 +8,7 @@ Stable Tag: 1.0.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-O Vindi Assinaturas e Cobrança Recorrente possibilita administração e cobrança de: Planos, Assinaturas e Mensalidades. Venda Sempre!
+O Vindi Assinaturas e Cobrança Recorrente possibilita administração e cobrança de: planos, assinaturas e mensalidades. Sites de Assinaturas, Softwares SaaS, Hospedagens, e-Learning, Jogos Online, Editoras, Serviços agora podem cobrar de seus clientes com tranquilidade.
 
 == Description ==
 
