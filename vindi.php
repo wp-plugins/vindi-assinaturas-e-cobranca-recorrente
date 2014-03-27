@@ -32,11 +32,8 @@ register_deactivation_hook(__FILE__,array("vindi","deactivate"));
 
 class vindi
 {
-  //const vindiProtocol = "https";
-  const vindiProtocol = "http";
-
-  //const vindiBaseDomain = "vindi.com.br";
-  const vindiBaseDomain = "hexxie.com";
+  const vindiProtocol = "https";
+  const vindiBaseDomain = "vindi.com.br";
 
   function manualTrim($text)
   {
