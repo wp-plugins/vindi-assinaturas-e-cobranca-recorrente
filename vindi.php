@@ -497,7 +497,7 @@ class vindi
 		  'vindiMode'=>'test',
 		  'vindiSignupType'=>'default',
 		  'vindiNoAccessAction'=>'default',
-		  'vindiDefaultNoAccess'=>'Voce nao tem permissao para acessar esta pagina. Por favor, cadastre sua conta para visualizar este conteudo.',
+		  'vindiDefaultNoAccess'=>'Você não tem permissão para acessar esta página. Por favor, cadastre sua conta para visualizar este conteúdo.',
 		  'vindiThankYou'=>'<strong>Assinatura criada com sucesso!</strong>',
 		  'vindiSignupLink'=>'<<coloque o link para sua pagina de login aqui>>'
 		  );
