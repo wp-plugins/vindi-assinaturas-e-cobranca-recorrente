@@ -4,7 +4,7 @@ Plugin Name: Vindi Wordpress Plugin
 Plugin URI: http://vindi.com.br/plugins
 Description: Gerencie assinaturas no WordPress usando a API da Vindi
 Author: Vindi
-Version: 1.0.0
+Version: 1.0.2
 Author URI: http://vindi.com.br
 */
 
@@ -32,11 +32,8 @@ register_deactivation_hook(__FILE__,array("vindi","deactivate"));
 
 class vindi
 {
-  //const vindiProtocol = "https";
-  const vindiProtocol = "http";
-
-  //const vindiBaseDomain = "vindi.com.br";
-  const vindiBaseDomain = "hexxie.com";
+  const vindiProtocol = "https";
+  const vindiBaseDomain = "vindi.com.br";
 
   function manualTrim($text)
   {
