@@ -8,7 +8,7 @@ Stable Tag: 2.3.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Receba pagamentos com a Vindi para o WooCommerce e crie seu clube de assinaturas.
+Venda assinaturas de produtos e serviços através do cartão de crédito e boletos pelo plugin de cobrança recorrente Vindi WooCommerce Assinaturas.
 
 == Description ==
 
