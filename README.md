@@ -56,6 +56,7 @@ Seu código está distribuído sob os termos do [GNU GPLv3](http://www.gnu.org/l
 - Configure o plugin na página de administração do WordPress em: 
     - *WooCommerce -> Configurações -> Finalizar Compra -> Vindi - Cartão de Crédito* e
     - *WooCommerce -> Configurações -> Finalizar Compra -> Vindi - Boleto Bancário*.
+- Em *WooCommerce -> Campos do Checkout*, ative Tipo de Pessoa Física e Jurídica, RG e Inscrição estadual. 
 - Para mais detalhes sobre a instalação de plugins no WordPress leia o tutorial [WordPress - Gerenciando Plugins] (http://codex.wordpress.org/pt-br:Gerenciando_Plugins#Instalando_Plugins).
 
 ## Perguntas Frequentes

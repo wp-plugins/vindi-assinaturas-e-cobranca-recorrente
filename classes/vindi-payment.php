@@ -105,16 +105,24 @@ class WC_Vindi_Payment {
 			add_user_meta( $userId, 'vindi_user_code', $userCode, true );
 		}
 
+		$metadata = [ ];
+
 		// Pessoa jurídica
 		if ( '2' === $this->order->billing_persontype ) {
 			$name      = $this->order->billing_company;
 			$cpfOrCnpj = $this->order->billing_cnpj;
 			$notes     = 'Nome: ' . $this->order->billing_first_name . ' ' . $this->order->billing_last_name;
+			if ( $this->gateway->sendNfeInformation ) {
+				$metadata['inscricao_estadual'] = $this->order->billing_ie;
+			}
 		} // Pessoa física
 		else {
 			$name      = $this->order->billing_first_name . ' ' . $this->order->billing_last_name;
 			$cpfOrCnpj = $this->order->billing_cpf;
 			$notes     = '';
+			if ( $this->gateway->sendNfeInformation ) {
+				$metadata['carteira_de_identidade'] = $this->order->billing_rg;
+			}
 		}
 
 		$customer = [
@@ -124,6 +132,7 @@ class WC_Vindi_Payment {
 			'code'          => $userCode,
 			'address'       => $address,
 			'notes'         => $notes,
+			'metadata'      => $metadata,
 		];
 
 		$customerId = $this->gateway->api->findOrCreateCustomer( $customer );
@@ -178,6 +187,7 @@ class WC_Vindi_Payment {
 	 * @return string
 	 */
 	public function paymentMethodCode() {
+		// TODO fix it to proper method code
 		return $this->isCc() ? 'credit_card' : 'bank_slip';
 	}
 

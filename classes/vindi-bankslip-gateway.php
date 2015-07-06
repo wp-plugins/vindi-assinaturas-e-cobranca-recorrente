@@ -79,31 +79,39 @@ class WC_Vindi_BankSlip_Gateway extends WC_Vindi_Base_Gateway {
 	 * @return void
 	 */
 	public function init_form_fields() {
-		$url      = admin_url( 'admin.php?page=wc-status&tab=logs&log_file=vindi-wc-' . $this->getToken() . '-log' );
-		$logs_url = '<a href="' . $url . '" target="_blank">' . __( 'Ver Logs', 'woocommerce-vindi' ) . '</a>';
+		$url           = admin_url( 'admin.php?page=wc-status&tab=logs&log_file=vindi-wc-' . $this->getToken() . '-log' );
+		$logs_url      = '<a href="' . $url . '" target="_blank">' . __( 'Ver Logs', 'woocommerce-vindi' ) . '</a>';
+		$nfe_know_more = '<a href="http://atendimento.vindi.com.br/hc/pt-br/articles/204450944-Notas-fiscais" target="_blank">' . __( 'Saiba mais', 'woocommerce-vindi' ) . '</a>';
 
 		$prospects_url = '<a href="https://app.vindi.com.br/prospects/new" target="_blank">' . __( 'Não possui uma conta?', 'woocommerce-vindi' ) . '</a>';
 
 		$this->form_fields = [
-			'enabled'      => [
+			'enabled'            => [
 				'title'   => __( 'Habilitar/Desabilitar', 'woocommerce-vindi' ),
 				'label'   => __( 'Habilitar pagamento por Boleto Bancário com Vindi', 'woocommerce-vindi' ),
 				'type'    => 'checkbox',
 				'default' => 'no',
 			],
-			'title'        => [
+			'title'              => [
 				'title'       => __( 'Título', 'woocommerce-vindi' ),
 				'type'        => 'text',
 				'description' => __( 'Título que o cliente verá durante o processo de pagamento.', 'woocommerce-vindi' ),
 				'default'     => __( 'Boleto Bancário', 'woocommerce-vindi' ),
 			],
-			'apiKey'       => [
+			'apiKey'             => [
 				'title'       => __( 'Chave da API Vindi', 'woocommerce-vindi' ),
 				'type'        => 'text',
 				'description' => __( 'A Chave da API de sua conta na Vindi. ' . $prospects_url, 'woocommerce-vindi' ),
 				'default'     => '',
 			],
-			'returnStatus' => [
+			'sendNfeInformation' => [
+				'title'       => __( 'Emissão de NFe\'s', 'woocommerce-vindi' ),
+				'label'       => __( 'Enviar informações para emissão de NFe\'s', 'woocommerce-vindi' ),
+				'type'        => 'checkbox',
+				'description' => sprintf( __( 'Envia informações de RG e Inscrição Estadual para Emissão de NFe\'s com nossos parceiros. %s', 'woocommerce-vindi' ), $nfe_know_more ),
+				'default'     => 'no',
+			],
+			'returnStatus'       => [
 				'title'       => __( 'Status de conclusão do pedido', 'woocommerce-vindi' ),
 				'type'        => 'select',
 				'description' => __( 'Status que o pedido deverá ter após receber a confirmação de pagamento da Vindi.', 'woocommerce-vindi' ),
@@ -114,11 +122,11 @@ class WC_Vindi_BankSlip_Gateway extends WC_Vindi_Base_Gateway {
 					'completed'  => 'Concluído',
 				],
 			],
-			'testing'      => [
+			'testing'            => [
 				'title' => __( 'Testes', 'vindi-woocommerce' ),
 				'type'  => 'title',
 			],
-			'debug'        => [
+			'debug'              => [
 				'title'       => __( 'Log de Depuração', 'woocommerce-vindi' ),
 				'label'       => __( 'Ativar Logs', 'woocommerce-vindi' ),
 				'type'        => 'checkbox',

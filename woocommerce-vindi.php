@@ -3,7 +3,7 @@
  * Plugin Name: Vindi Woocommerce Assinaturas
  * Plugin URI: https://wordpress.org/plugins/vindi-assinaturas-e-cobranca-recorrente/
  * Description: Adiciona o gateway de pagamentos da Vindi para o WooCommerce.
- * Version: 2.3.0
+ * Version: 2.3.1
  * Author: Vindi
  * Author URI: https://www.vindi.com.br
  * Requires at least: 4.0

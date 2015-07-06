@@ -3,7 +3,7 @@ Contributors: rscafi, wnarde
 Website Link: https://www.vindi.com.br
 Tags: vindi, subscription, membership, pagamento-recorrente, cobranca-recorrente, cobrança-recorrente, recurring, site-de-assinatura, assinaturas, faturamento-recorrente, recorrencia, assinatura, subscription-billing, cielo, elavon, rede, redecard, boleto, boleto-bancario, cartao-de-credito, bank-slip, credit-card, woocommerce
 Requires at least: 4.0
-Tested up to: WordPress 4.2.2
+Tested up to: WordPress 4.2
 Stable Tag: 2.3.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -57,6 +57,7 @@ Seu código está distribuído sob os termos do [GNU GPLv3](http://www.gnu.org/l
 - Configure o plugin na página de administração do WordPress em:
     - *WooCommerce -> Configurações -> Finalizar Compra -> Vindi - Cartão de Crédito* e
     - *WooCommerce -> Configurações -> Finalizar Compra -> Vindi - Boleto Bancário*.
+- Em *WooCommerce -> Campos do Checkout*, ative Tipo de Pessoa Física e Jurídica, RG e Inscrição estadual.
 - Para mais detalhes sobre a instalação de plugins no WordPress leia o tutorial [WordPress - Gerenciando Plugins] (http://codex.wordpress.org/pt-br:Gerenciando_Plugins#Instalando_Plugins).
 
 == Frequently Asked Questions ==

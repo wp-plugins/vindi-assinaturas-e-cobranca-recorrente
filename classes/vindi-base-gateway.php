@@ -18,6 +18,11 @@ abstract class WC_Vindi_Base_Gateway extends WC_Payment_Gateway {
 	protected $debug = false;
 
 	/**
+	 * @var bool
+	 */
+	public $sendNfeInformation;
+
+	/**
 	 * Should return payment type for payment processing.
 	 * @return string
 	 */
@@ -28,11 +33,12 @@ abstract class WC_Vindi_Base_Gateway extends WC_Payment_Gateway {
 	 */
 	public function __construct() {
 
-		$this->debug        = 'yes' === $this->get_option( 'debug' );
-		$this->title        = $this->get_option( 'title' );
-		$this->enabled      = $this->get_option( 'enabled' );
-		$this->apiKey       = $this->get_option( 'apiKey' );
-		$this->returnStatus = $this->get_option( 'returnStatus' );
+		$this->debug              = 'yes' === $this->get_option( 'debug' );
+		$this->title              = $this->get_option( 'title' );
+		$this->enabled            = $this->get_option( 'enabled' );
+		$this->apiKey             = $this->get_option( 'apiKey' );
+		$this->returnStatus       = $this->get_option( 'returnStatus' );
+		$this->sendNfeInformation = 'yes' === $this->get_option( 'sendNfeInformation' );
 
 		if ( $this->debug ) {
 			$this->logger = new WC_Logger();
