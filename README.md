@@ -147,6 +147,9 @@ Para suporte ao Plugin e dúvidas relacionadas ao **Vindi WooCommerce Assinatura
 
 ## Changelog
 
+### 2.3.1 - 06/07/2015
+- Adicionada opção para enviar informações para emissão de NFe's.
+
 ### 2.3.0 - 08/06/2015 
 - Adicionada validação tornando necessária a utilização de um certificado SSL para realização de cobranças em produção.
 - Divisão dos métodos de pagamento Cartão de Crédito e Boleto Bancário em dois gateways distintos, podendo ser habilitados separadamente.
