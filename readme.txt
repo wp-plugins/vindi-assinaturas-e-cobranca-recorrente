@@ -3,8 +3,8 @@ Contributors: rscafi, wnarde
 Website Link: https://www.vindi.com.br
 Tags: vindi, subscription, membership, pagamento-recorrente, cobranca-recorrente, cobrança-recorrente, recurring, site-de-assinatura, assinaturas, faturamento-recorrente, recorrencia, assinatura, subscription-billing, cielo, elavon, rede, redecard, boleto, boleto-bancario, cartao-de-credito, bank-slip, credit-card, woocommerce
 Requires at least: 4.0
-Tested up to: WordPress 4.2
-Stable Tag: 2.3.0
+Tested up to: 4.2
+Stable Tag: 2.3.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

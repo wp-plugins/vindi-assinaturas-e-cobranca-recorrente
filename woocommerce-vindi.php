@@ -31,7 +31,7 @@ if ( ! class_exists( 'WC_Vindi' ) ) :
 		/**
 		 * @var string
 		 */
-		public $version = '2.3.0';
+		public $version = '2.3.1';
 
 		/**
 		 * Instance of this class.
