@@ -2,12 +2,12 @@
 
 ## Tabela de Conteúdos
 
-- [Descrição] (#descrição)
-- [Requerimentos] (#requerimentos)
-- [Instalação] (#instalação)
-- [Perguntas Frequentes] (#perguntas-frequentes)
-- [Suporte] (#suporte)
-- [Changelog] (#changelog)
+- [Descrição](#descrição)
+- [Requerimentos](#requerimentos)
+- [Instalação](#instalação)
+- [Perguntas Frequentes](#perguntas-frequentes)
+- [Suporte](#suporte)
+- [Changelog](#changelog)
 
 ## Descrição
 
@@ -33,7 +33,7 @@ A [Vindi](http://www.vindi.com.br/) é líder em cobrança recorrente no Brasil.
     - Cielo
     - Rede
     - Elavon
-    
+
 ### Propriedade e Desenvolvimento
 O plugin **Vindi WooCommerce Assinaturas** foi desenvolvido pela Vindi, sendo de exclusividade da empresa. Para uso do plugin e suas funcionalidades basta [habilitar uma conta na Vindi](https://app.vindi.com.br/prospects/new), solicitando permissão para começar a instalação e integração das melhores ferramentas para seu negócio de assinaturas.
 
@@ -44,7 +44,7 @@ Seu código está distribuído sob os termos do [GNU GPLv3](http://www.gnu.org/l
 ## Requerimentos
 - PHP versão **5.4** ou superior.
 - Um site com o WordPress instalado.
-- Plugin [WooCommerce](https://wordpress.org/plugins/woocommerce/) instalado e habilitado. 
+- Plugin [WooCommerce](https://wordpress.org/plugins/woocommerce/) instalado e habilitado.
 - Plugin [WooCommerce Extra Checkout Fields for Brazil](https://wordpress.org/extend/plugins/woocommerce-extra-checkout-fields-for-brazil/) instalado e habilitado.
 - Utilizar um certificado SSL (é recomendado um de 2048 bits).
 - [Possuir uma conta habilitada na Vindi](https://app.vindi.com.br/prospects/new).
@@ -53,21 +53,21 @@ Seu código está distribuído sob os termos do [GNU GPLv3](http://www.gnu.org/l
 
 - Envie os arquivos do plugin para a pasta `wp-content/plugins`, ou utilize o instalador de plugins do WordPress.
 - Ative o plugin.
-- Configure o plugin na página de administração do WordPress em: 
+- Configure o plugin na página de administração do WordPress em:
     - *WooCommerce -> Configurações -> Finalizar Compra -> Vindi - Cartão de Crédito* e
     - *WooCommerce -> Configurações -> Finalizar Compra -> Vindi - Boleto Bancário*.
-- Em *WooCommerce -> Campos do Checkout*, ative Tipo de Pessoa Física e Jurídica, RG e Inscrição estadual. 
-- Para mais detalhes sobre a instalação de plugins no WordPress leia o tutorial [WordPress - Gerenciando Plugins] (http://codex.wordpress.org/pt-br:Gerenciando_Plugins#Instalando_Plugins).
+- Em *WooCommerce -> Campos do Checkout*, ative Tipo de Pessoa Física e Jurídica, RG e Inscrição estadual.
+- Para mais detalhes sobre a instalação de plugins no WordPress leia o tutorial [WordPress - Gerenciando Plugins](http://codex.wordpress.org/pt-br:Gerenciando_Plugins#Instalando_Plugins).
 
 ## Perguntas Frequentes
 
 ### Quais são os requisitos para utilizar o plugin?
 - PHP versão **5.4** ou superior.
 - Um site com o WordPress instalado.
-- Plugin [WooCommerce](https://wordpress.org/plugins/woocommerce/) instalado e habilitado. 
+- Plugin [WooCommerce](https://wordpress.org/plugins/woocommerce/) instalado e habilitado.
 - Plugin [WooCommerce Extra Checkout Fields for Brazil](https://wordpress.org/extend/plugins/woocommerce-extra-checkout-fields-for-brazil/) instalado e habilitado.
 - Utilizar um certificado SSL (é recomendado um de 2048 bits).
-- [Possuir uma conta habilitada na Vindi](https://app.vindi.com.br/prospects/new).         
+- [Possuir uma conta habilitada na Vindi](https://app.vindi.com.br/prospects/new).
 
 ### Quais são os métodos de pagamento aceitos?
 O plugin aceita atualmente pagamentos via cartão de crédito e boleto bancário.
@@ -88,7 +88,7 @@ O plugin aceita atualmente pagamentos via cartão de crédito e boleto bancário
     - Cielo
     - Rede
     - Elavon
-    
+
 ### Esta solução de pagamentos é segura?
 A Vindi possui a certificação PCI DSS. Isso significa que todas as transações são seguras e cumprem exigências de acordo com o padrão estabelecido pelo PCI. Caso deseje, [leia mais sobre segurança](http://www.vindi.com.br/recursos/pci-compliance/) ou entre em contato para qualquer esclarecimento.
 
@@ -122,7 +122,7 @@ Sim, o plugin fornece a opção de parcelamento de vendas avulsas/simples. Você
 Sim. Utilize qualquer método de cálculo de frete desejado, como o [WooCommerce Correios](https://wordpress.org/plugins/woocommerce-correios/). O plugin adicionará o valor do frete ao valor da assinatura. Caso não deseje cobrar frete, utilize a opção Frete Grátis do próprio WooCommerce.
 
 ### É possível utilizar cupons de desconto na assinatura?
-Sim. Porém, no momento, ao adicionar um desconto, o valor será refletido em **todas as cobranças**. O suporte a cupons para períodos customizados será adicionado futuramente. 
+Sim. Porém, no momento, ao adicionar um desconto, o valor será refletido em **todas as cobranças**. O suporte a cupons para períodos customizados será adicionado futuramente.
 
 ### É possível fazer estornos ou cancelar assinaturas pelo plugin?
 No momento ainda não é possível fazer essa configuração pelo plugin, mas é totalmente possível acessar a plataforma de usuário da Vindi e ajustar as assinaturas e pagamentos conforme necessário.
@@ -147,10 +147,14 @@ Para suporte ao Plugin e dúvidas relacionadas ao **Vindi WooCommerce Assinatura
 
 ## Changelog
 
+### 2.3.2 - 30/07/2015
+- Melhorias na comunicação com a API da Vindi.
+- Arrumado erro com a constante `WC_VINDI_VERSION`
+
 ### 2.3.1 - 06/07/2015
 - Adicionada opção para enviar informações para emissão de NFe's.
 
-### 2.3.0 - 08/06/2015 
+### 2.3.0 - 08/06/2015
 - Adicionada validação tornando necessária a utilização de um certificado SSL para realização de cobranças em produção.
 - Divisão dos métodos de pagamento Cartão de Crédito e Boleto Bancário em dois gateways distintos, podendo ser habilitados separadamente.
 - Cobranças rejeitadas agora são informadas no pedido. Caso todas as tentativas de cobrança sejam rejeitadas, o status do pedido é atualizado para "Falhado".
@@ -164,7 +168,7 @@ Para suporte ao Plugin e dúvidas relacionadas ao **Vindi WooCommerce Assinatura
 - Adicionada mensagem de alerta caso a conta Vindi esteja em modo Trial.
 - Grande Refatoração do Código para manter o mesmo estilo de código do WordPress.
 - Outras pequenas melhorias e validações.
- 
+
 ### 2.2.0 - 08/05/2015
 - Retrabalhada a forma como o status do pedido é definido quando a confirmação de pagamento é recebida.
 - Informações de endereço e documento agora são enviados para a criação do usuário na Vindi, para permitir a emissão de notas fiscais.

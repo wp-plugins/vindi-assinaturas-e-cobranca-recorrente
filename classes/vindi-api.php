@@ -109,11 +109,13 @@ if ( ! class_exists( 'WC_Vindi_API' ) ):
 
 			$this->gateway->log( sprintf( "[Request #%s]: Novo Request para a API.\n%s %s\n%s", $requestId, $method, $url, $dataToLog ) );
 
+			$version = defined('WC_VINDI_VERSION') ? WC_VINDI_VERSION : 'Unknown';
+
 			$response = wp_remote_post( $url, [
 				'headers'   => [
 					'Authorization' => $this->getAuthHeader(),
 					'Content-Type'  => 'application/json',
-				    'User-Agent' => 'Vindi-WooCommerce/' . WC_VINDI_VERSION,
+				    'User-Agent' => 'Vindi-WooCommerce/' . $version . '; ' . get_bloginfo( 'url' ),
 				],
 				'method'    => $method,
 				'timeout'   => 60,

@@ -4,7 +4,7 @@ Website Link: https://www.vindi.com.br
 Tags: vindi, subscription, membership, pagamento-recorrente, cobranca-recorrente, cobrança-recorrente, recurring, site-de-assinatura, assinaturas, faturamento-recorrente, recorrencia, assinatura, subscription-billing, cielo, elavon, rede, redecard, boleto, boleto-bancario, cartao-de-credito, bank-slip, credit-card, woocommerce
 Requires at least: 4.0
 Tested up to: 4.2
-Stable Tag: 2.3.1
+Stable Tag: 2.3.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -154,6 +154,10 @@ Para suporte ao Plugin e dúvidas relacionadas ao **Vindi WooCommerce Assinatura
 5. Botão de download do boleto ao concluir o pedido via boleto bancário.
 
 == Changelog ==
+
+= 2.3.2 - 30/07/2015 =
+- Melhorias na comunicação com a API da Vindi.
+- Arrumado erro com a constante 'WC_VINDI_VERSION'
 
 = 2.3.1 - 06/07/2015 =
 - Adicionada opção para enviar informações para emissão de NFe's.
